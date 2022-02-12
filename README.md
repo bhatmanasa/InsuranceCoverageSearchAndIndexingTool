@@ -16,7 +16,7 @@ This is a search and indexing tool for adding insurance coverage plans into redi
 - Security (OAuth implementation - generating RSA token)
 
 # Demo:
-
+![Indexing Demo](IndexingDemo.gif)
 
 # How to Use:
 - Install Kibana
