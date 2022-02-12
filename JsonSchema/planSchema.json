@@ -1,0 +1,107 @@
+{
+    "type":"object",
+    "properties":{
+        "planCostShares":{
+            "type":"object",
+            "properties":{
+                "deductible":{
+                    "type":"integer",
+                    "minimum": 0
+                },
+                "_org":{
+                    "type":"string"
+                },
+                "copay":{
+                    "type":"integer",
+                    "minimum": 0
+                },
+                "objectId":{
+                    "type":"string"
+                },
+                "objectType":{
+                    "type":"string"
+                }
+            },
+            "required":["objectId","objectType","deductible","_org","copay"]
+        },
+        "linkedPlanServices":{
+            "type":"array",
+            "uniqueItems":"true",
+            "items":{
+                "type":"object",
+                "properties":{
+                    "linkedService":{
+                        "type":"object",
+                        "properties":{
+                            "_org":{
+                                "type":"string"
+                            },
+                            "objectId":{
+                                "type":"string"
+                            },
+                            "objectType":{
+                                "type":"string"
+                            },
+                            "name":{
+                                "type":"string"
+                            }
+                        },
+                        "required":["objectId","objectType","_org","name"]
+                    },
+                    "planserviceCostShares":{
+                        "type":"object",
+                        "properties":{
+                            "deductible":{
+                                "type":"integer",
+                                "minimum": 0
+                            },
+                            "_org":{
+                                "type":"string"
+                            },
+                            "copay":{
+                                "type":"integer",
+                                "minimum": 0
+                            },
+                            "objectId":{
+                                "type":"string"
+                            },
+                            "objectType":{
+                                "type":"string"
+                            }
+                        },
+                        "required":["objectId","objectType","deductible","_org","copay"]
+                    },
+                    "_org":{
+                        "type":"string"
+                    },
+                    "objectId":{
+                        "type":"string"
+                    },
+                    "objectType":{
+                        "type":"string"
+                    }
+
+                },
+                "required":["linkedService","planserviceCostShares","_org","objectId","objectType"]
+            }
+        },
+        "_org":{
+            "type":"string"
+        },
+        "objectId":{
+            "type":"string"
+        },
+        "objectType":{
+            "type":"string"
+        },
+        "planType":{
+            "type":"string"
+        },
+        "creationDate":{
+            "type":"string"
+        }
+
+    },
+    "required":["planCostShares","linkedPlanServices","_org","objectId","objectType","planType","creationDate"]
+
+}

@@ -1,0 +1,22 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "Demo1 Project for INFO7255",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "body-parser": "^1.19.0",
+    "elasticsearch": "^16.7.2",
+    "express": "^4.17.1",
+    "jsonschema": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "node-rsa": "^1.1.1",
+    "redis": "^3.1.2",
+    "rsmq": "^0.12.4"
+  }
+}
